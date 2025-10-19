@@ -1,0 +1,115 @@
+/* بدنه و پس‌زمینه */
+body.skin-blue {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #444;
+}
+
+/* عنوان صفحه */
+.content-header h1 {
+  font-weight: 700;
+  color: #3c8dbc;
+}
+
+/* جدول */
+.table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+.table th {
+  background-color: #3c8dbc;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 15px;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-radius: 6px 6px 0 0;
+}
+
+.table td {
+  background-color: #f9fafc;
+  padding: 12px 15px;
+  vertical-align: middle;
+  text-align: center;
+  border-top: none !important;
+  border-bottom: 1px solid #eaeaea !important;
+}
+
+.table tbody tr:hover td {
+  background-color: #eaf6ff;
+  transition: background-color 0.3s ease;
+}
+
+/* دکمه‌ها */
+.btn-primary {
+  background-color: #3c8dbc;
+  border-color: #367fa9;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #367fa9;
+  border-color: #2e6da4;
+}
+
+.btn-danger {
+  background-color: #dd4b39;
+  border-color: #d73925;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #d73925;
+  border-color: #b52b1a;
+}
+
+/* باکس کلی */
+.box {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(60, 141, 188, 0.15);
+  border: none;
+  background: #fff;
+  padding: 20px;
+}
+
+/* تیتر باکس */
+.box-header h3.box-title {
+  color: #3c8dbc;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* ردیف‌ها */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* فاصله باکس‌ها از هم */
+.box + .box {
+  margin-top: 30px;
+}
+
+/* لینک‌ها */
+a {
+  color: #3c8dbc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #367fa9;
+  text-decoration: underline;
+}
+

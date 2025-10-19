@@ -1,0 +1,433 @@
+/* کل بدنه */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #4a4a4a, #d0d0d0);
+  color: #ffffff; /* متن مشکی */
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background 0.5s ease;
+}
+
+/* هدر */
+header.navbar-fixed-top {
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  backdrop-filter: blur(8px);
+  transition: background 0.3s ease;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+header nav ul li a {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ffffff; /* نوشته‌های منو تیره */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+header nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #222222; /* خط زیر منو */
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+header nav ul li a:hover,
+header nav ul li a:focus {
+  color: #000000; /* هاور مشکی */
+}
+header nav ul li a:hover::after,
+header nav ul li a:focus::after {
+  width: 100%;
+}
+
+/* Section titles */
+.section h4 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #000000; /* عنوان بخش‌ها */
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  text-shadow: none; /* حذف سایه برای وضوح */
+  animation: glowText 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px #a0a0a0, 0 0 20px #b0b0b0, 0 0 30px #c0c0c0;
+  }
+  to {
+    text-shadow: 0 0 20px #a0a0a0, 0 0 30px #b0b0b0, 0 0 40px #c0c0c0;
+  }
+}
+
+.section h1.size-50 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ffffff; /* عنوان بزرگ کاملاً مشکی */
+  margin-bottom: 50px;
+  line-height: 1.1;
+  text-shadow: none;
+  animation: slideInFromLeft 1s ease forwards;
+}
+
+/* Home section */
+#home {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #7a7a7a, #a9a9a9);
+  color: #000000; /* متن خانه مشکی */
+  animation: bgPulse 8s ease-in-out infinite alternate;
+}
+@keyframes bgPulse {
+  0% {
+    background: linear-gradient(135deg, #555555, #888888);
+  }
+  100% {
+    background: linear-gradient(135deg, #888888, #555555);
+  }
+}
+#home h4 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 900;
+  text-shadow: none;
+  animation: popIn 1s ease forwards 0.5s;
+}
+#home h1 {
+  font-size: 5.8rem;
+  font-weight: 900;
+  text-shadow: none;
+  animation: popIn 1s ease forwards 1s;
+}
+
+/* About Section */
+#about {
+  padding: 80px 0;
+  background: #888888;
+  color: #ffffff; /* متن درباره خاکستری خیلی تیره */
+}
+#about .about-img-div {
+  position: relative;
+  margin-top: 30px;
+}
+#about .about-border {
+  position: absolute;
+  border: 4px solid #a0a0a0;
+  width: 420px;
+  height: 420px;
+  top: 15px;
+  left: 15px;
+  border-radius: 30px;
+  z-index: 1;
+  box-shadow: 0 0 25px #8b8a8a;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+#about .about-img-div:hover .about-border {
+  transform: translate(25px, 25px);
+  box-shadow: 0 0 50px #000000;
+}
+#about .about-img-div img {
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 50px rgba(160, 160, 160, 0.6);
+  transition: transform 0.6s ease;
+}
+#about .about-img-div:hover img {
+  transform: scale(1.05) rotate(2deg);
+}
+
+/* Experience Timeline */
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 4px solid #a0a0a0;
+}
+.timeline-event {
+  position: relative;
+  padding: 25px 0 25px 50px;
+  border-bottom: 1px solid #555;
+  transition: background 0.3s ease;
+  cursor: default;
+}
+.timeline-event:hover {
+  background: rgba(160, 160, 160, 0.1);
+  box-shadow: 0 0 20px rgba(160, 160, 160, 0.3);
+}
+.timeline-event-icon {
+  position: absolute;
+  left: -18px;
+  top: 30px;
+  background: #a0a0a0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 15px #000000;
+  transition: background 0.3s ease;
+}
+.timeline-event:hover .timeline-event-icon {
+  background: #888888;
+  box-shadow: 0 0 30px #888888;
+}
+.timeline-event-copy h3 {
+  margin-top: 0;
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #000000; /* عنوان تجربه مشکی */
+  text-shadow: none;
+}
+.timeline-event-copy h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #222222; /* زیرعنوان تیره */
+  margin-bottom: 15px;
+}
+.timeline-event-copy p.timeline-event-thumbnail {
+  font-size: 1rem;
+  color: #ffffff; /* متن توضیحات */
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* Projects Section */
+.portfolio-div {
+  margin-top: 50px;
+}
+/* فیلتر پروژه ها */
+.categories-grid nav {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.categories-grid nav ul.portfolio_filter {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-flex;
+  gap: 25px;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+.categories-grid nav ul.portfolio_filter li {
+  margin: 0;
+}
+.categories-grid nav ul.portfolio_filter li a {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #222222; /* رنگ فیلتر پروژه‌ها */
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  padding: 8px 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.categories-grid nav ul.portfolio_filter li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0%;
+  height: 3px;
+  background-color: #222222;
+  border-radius: 3px;
+  transition: width 0.35s ease;
+}
+.categories-grid nav ul.portfolio_filter li a:hover,
+.categories-grid nav ul.portfolio_filter li a.active {
+  color: #000000;
+}
+.categories-grid nav ul.portfolio_filter li a:hover::after,
+.categories-grid nav ul.portfolio_filter li a.active::after {
+  width: 100%;
+}
+
+/* هر پروژه */
+.portfolio_item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(160, 160, 160, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.portfolio_item:hover {
+  transform: scale(1.08);
+  box-shadow: 0 25px 60px rgba(160, 160, 160, 0.8);
+}
+.portfolio_item img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+  transition: transform 0.6s ease;
+  filter: grayscale(10%);
+}
+.portfolio_item:hover img {
+  transform: scale(1.15) rotate(3deg);
+  filter: grayscale(0%);
+}
+.portfolio_item_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(160, 160, 160, 0.85);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.portfolio_item:hover .portfolio_item_hover {
+  opacity: 1;
+}
+.portfolio_item_hover .item_info {
+  text-align: center;
+  color: #000000; /* متن پروژه‌ها مشکی */
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.portfolio_item_hover .item_info em {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 8px;
+  display: block;
+}
+
+/* Contact */
+#contact {
+  background: #9c9999;
+  padding: 80px 0;
+  color: #000000; /* متن فرم مشکی */
+}
+.contact-bg {
+  background: #3a3a3a;
+  padding: 50px 40px;
+  border-radius: 30px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7);
+}
+.contact-bg input,
+.contact-bg textarea {
+  border-radius: 20px;
+  border: 2px solid #a0a0a0;
+  padding: 18px 25px;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  transition: all 0.35s ease;
+  width: 100%;
+  background: #505050;
+  color: #000000; /* متن فرم مشکی */
+  box-shadow: inset 0 3px 8px rgba(160, 160, 160, 0.3);
+}
+.contact-bg input::placeholder,
+.contact-bg textarea::placeholder {
+  color: #000000; /* placeholder خاکستری */
+}
+.contact-bg input:focus,
+.contact-bg textarea:focus {
+  border-color: #888888;
+  box-shadow: 0 0 15px #a0a0a0;
+  outline: none;
+  background: #444444;
+  color: #000000;
+}
+.btn-glance {
+  background: linear-gradient(45deg, #a0a0a0, #888888);
+  border: none;
+  padding: 18px 50px;
+  color: #222222; /* متن دکمه */
+  font-weight: 900;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  box-shadow: 0 15px 50px rgba(136, 136, 136, 0.7);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.btn-glance:hover {
+  background: linear-gradient(45deg, #888888, #a0a0a0);
+  box-shadow: 0 20px 60px rgba(136, 136, 136, 0.95);
+  transform: scale(1.1);
+}
+
+/* Social icons */
+.social li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.social li a {
+  font-size: 2rem;
+  color: #222222; /* رنگ آیکون‌ها */
+  transition: color 0.3s ease;
+  text-shadow: none;
+}
+.social li a:hover {
+  color: #000000;
+  text-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section h1.size-50 {
+    font-size: 2.8rem;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  header.navbar-fixed-top {
+    position: relative;
+    padding: 15px 10px;
+  }
+  .categories-grid nav ul.portfolio_filter {
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+}
+#success, #error {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+#success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+#error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

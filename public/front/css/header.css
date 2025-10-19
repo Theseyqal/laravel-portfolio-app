@@ -1,0 +1,80 @@
+/* Header کلی */
+.main-header {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: #fff;
+  border-bottom: 3px solid #6c5ce7;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* لوگو */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px;
+  background: #2d3436;
+  color: #ffffff !important;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s ease;
+}
+
+.logo:hover {
+  background: #636e72;
+  color: #ffeaa7 !important;
+}
+
+/* نوار بالا */
+.navbar-static-top {
+  background-color: transparent !important;
+  border: none;
+}
+
+/* آیکون toggle */
+.sidebar-toggle {
+  color: #ffffff;
+  padding: 18px;
+  transition: color 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+  color: #ffeaa7;
+}
+
+/* منوی کاربر */
+.navbar-custom-menu > .nav > li > a {
+  color: #ffffff;
+}
+
+.user-menu .dropdown-menu {
+  background-color: #2d3436;
+  border-radius: 8px;
+  border: none;
+}
+
+.user-header {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+.user-header p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.user-footer .btn {
+  background-color: #6c5ce7;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.user-footer .btn:hover {
+  background-color: #4834d4;
+  color: #fff;
+}
+.main-header {
+  background: linear-gradient(to right, #1f1c2c, #928dab) !important;
+  color: #fff !important;
+  border-bottom: 3px solid #6c5ce7 !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2) !important;
+}

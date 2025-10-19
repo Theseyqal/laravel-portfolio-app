@@ -1,0 +1,74 @@
+/* ===== Sidebar Custom Style ===== */
+
+.main-sidebar {
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-right: 2px solid #3d3d5c;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu > li {
+  position: relative;
+}
+
+.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #cfd8dc;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #3f3f5c;
+  color: #ffffff;
+  border-left: 3px solid #8e44ad;
+}
+
+.sidebar-menu li.active > a,
+.sidebar-menu li a:focus {
+  background-color: #4a4a6a;
+  color: #ffffff;
+  border-left: 3px solid #9b59b6;
+}
+
+.sidebar-menu li a i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.treeview-menu {
+  background: #2e2e45;
+  padding-left: 10px;
+}
+
+.treeview-menu li a {
+  font-size: 14px;
+  padding: 10px 25px;
+  color: #b0bec5;
+  border-left: 3px solid transparent;
+}
+
+.treeview-menu li a:hover {
+  background-color: #424263;
+  color: #ffffff;
+  border-left: 3px solid #00bcd4;
+}
+
+.sidebar-menu .treeview > a .fa-angle-left {
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.treeview.menu-open > a .fa-angle-left {
+  transform: rotate(-90deg);
+}

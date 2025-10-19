@@ -1,0 +1,81 @@
+/* کل باکس فرم */
+.box-primary {
+  border-radius: 12px;
+  background: linear-gradient(145deg, #f0f4ff, #d9e4ff);
+  box-shadow:
+    6px 6px 15px rgba(70, 130, 180, 0.15),
+    -6px -6px 15px rgba(255, 255, 255, 0.7);
+  padding: 30px 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-primary:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    10px 10px 20px rgba(70, 130, 180, 0.25),
+    -10px -10px 20px rgba(255, 255, 255, 0.85);
+}
+
+/* عنوان فرم */
+.box-header h3.box-title {
+  font-weight: 900;
+  font-size: 2rem;
+  color: #1a3c78;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #547ed9;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 3px rgba(84, 126, 217, 0.6);
+}
+
+/* لیبل‌ها */
+.form-group label {
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.4s ease;
+  user-select: none;
+}
+
+.form-group label:hover {
+  color: #547ed9;
+}
+
+/* فیلدهای ورودی */
+.form-control {
+  border-radius: 10px;
+  border: 2.5px solid #aac4ff;
+  padding: 14px 18px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: #e9f0ff;
+  box-shadow: inset 3px 3px 6px #b0c7ff,
+              inset -3px -3px 6px #ffffff;
+  transition:
+    border-color 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+}
+
+.form-control:focus {
+  border-color: #274caa;
+  background: #d0e0ff;
+  box-shadow:
+    0 0 8px 3px rgba(39, 76, 170, 0.5);
+  outline: none;
+}
+
+/* فوتر فرم */
+.box-footer {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #aac4ff;
+  background: #e9f0ffcc;
+  border-radius: 0 0 12px 12px;
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
