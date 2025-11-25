@@ -106,6 +106,7 @@ php artisan pail       # Stream application logs in real time
 ## 👤 Author
 **DevAliG (Ali Ghanbarzadeh)**  
 SaaS & MVP Builder | Tech Content Creator 
+
 [LinkedIn](https://www.linkedin.com/in/devalig) • [GitHub](https://github.com/DevAliG)
 
 ---
