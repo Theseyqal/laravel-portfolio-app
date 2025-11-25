@@ -83,8 +83,8 @@ php artisan pail       # Stream application logs in real time
 ## 🚀 Roadmap
 - [x] Core CRUD modules
 - [x] Contact form management
+- [x] Project media uploads
 - [ ] Admin authentication layer
-- [ ] Project media uploads
 - [ ] SEO metadata controls
 - [ ] Deployment on Render/AWS
 
