@@ -18,6 +18,11 @@ This application provides a structured admin dashboard to manage all key portfol
   - 🐳 **Sail** — Optional Docker environment
 
 ---
+## 🎥 Demo
+
+![Portfolio App Demo](Portfolio-app.gif)
+
+---
 
 ## 🧱 Architecture Overview
 Built following **Laravel’s latest application structure** and **PSR-12 standards**, ensuring clean separation between business logic and presentation.
@@ -100,7 +105,7 @@ php artisan pail       # Stream application logs in real time
 
 ## 👤 Author
 **DevAliG (Ali Ghanbarzadeh)**  
-Backend Developer — Laravel & PHP  
+SaaS & MVP Builder | Tech Content Creator 
 [LinkedIn](https://www.linkedin.com/in/devalig) • [GitHub](https://github.com/DevAliG)
 
 ---
