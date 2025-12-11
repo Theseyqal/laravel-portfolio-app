@@ -40,7 +40,7 @@ Key design principles:
 
 ### 1️⃣ Clone & Setup
 ```bash
-git clone https://github.com/DevAliG/laravel-portfolio-app.git
+git clone https://github.com/Theseyqal/laravel-portfolio-app.git
 cd laravel-portfolio-app
 composer install
 npm install
